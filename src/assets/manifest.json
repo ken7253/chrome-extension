@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "description": "個人用chrome拡張機能",
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "options_ui": {
+        "page": "index.html"
+    },
+    "permissions": []
+}
