@@ -6,6 +6,16 @@
     "background": {
         "service_worker": "background.js"
     },
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "css": ["css/github.css"]
+        },
+        {
+            "matches": ["https://zenn.dev/*"],
+            "css": ["css/zenn.css"]
+        }
+    ],
     "action": {
         "default_popup": "index.html"
     },

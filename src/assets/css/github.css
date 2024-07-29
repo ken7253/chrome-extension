@@ -1,0 +1,17 @@
+* {
+  font-family: 'BIZ UDP Gothic' !important;
+}
+
+* ::-webkit-scrollbar {
+  display: block;
+  width: 7px;
+}
+
+* ::-webkit-scrollbar-track {
+  width: 7px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  background-color: #333;
+}

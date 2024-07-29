@@ -1,0 +1,5 @@
+body {
+  --font-base: 'BIZ UDPGothic', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo,
+    sans-serif, 'Segoe UI Emoji' !important;
+  letter-spacing: 0.01em;
+}
