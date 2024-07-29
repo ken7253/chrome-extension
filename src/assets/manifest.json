@@ -1,9 +1,10 @@
 {
     "manifest_version": 3,
     "version": "1.0.0",
+    "name": "personal chrome extension",
     "description": "個人用chrome拡張機能",
     "background": {
-        "service_worker": "js/background.js"
+        "service_worker": "background.js"
     },
     "action": {
         "default_popup": "index.html"
