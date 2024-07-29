@@ -4,6 +4,12 @@
     "private": true,
     "description": "my chrome extension",
     "scripts": {
+        "build": "run-p build:*",
+        "watch": "run-p watch:*",
+        "build:script": "esbuild src/background.ts --bundle --outfile=dist/background.js",
+        "build:assets": "cpx \"src/assets/**/*\" dist",
+        "watch:script": "esbuild --watch src/background.ts --bundle --outfile=dist/background.js",
+        "watch:assets": "cpx \"src/assets/**/*\" dist --watch",
         "fmt": "prettier --write .",
         "check:lint": "eslint ."
     },
@@ -11,6 +17,8 @@
     "license": "MIT",
     "devDependencies": {
         "@eslint/js": "^9.8.0",
+        "cpx": "^1.5.0",
+        "esbuild": "^0.23.0",
         "eslint": "^9.8.0",
         "globals": "^15.8.0",
         "npm-run-all2": "^6.2.2",
